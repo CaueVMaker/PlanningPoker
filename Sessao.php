@@ -12,7 +12,7 @@ $numeroDeParticipantes = $_SESSION['numeroParticipantes'];
 
 // Simular lista de jogadores conectados
 if (!isset($_SESSION['participantes_on'])) {
-    $_SESSION['participantes_on'] = 0;
+    $_SESSION['participantes_on'] = 0; 
 }
 
 // Contagem dos jogadores conectados

@@ -24,7 +24,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (in_array($password, $senhasValidas)) {
         $_SESSION['numero_participantes'] = (int)$_POST["numero_participantes"];
         // exit("Redirecionando para teste.php");
-        header("Location: teste.php");
+        header("Location: Sessao.php");
         exit();
     } else {
         $erro = "Senha inválida. Solicite ao responsável pela sala.";
@@ -118,7 +118,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         .then(response => response.text())
         .then(status => {
             if (status == 'criada') {
-                window.location.href = 'teste.php';
+                window.location.href = 'Sessao.php';
             }
         });
     }

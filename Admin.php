@@ -56,7 +56,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $_SESSION['admin_ativo'] = true;
     $_SESSION['sala_status'] = "criada";
 
-    header("Location: teste.php");
+    header("Location: Sessao.php");
     exit();
 }
 ?>
